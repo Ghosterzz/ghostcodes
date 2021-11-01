@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
     res.status(301).redirect("https://discord.gg/kPBufSFmuJ")
 
 })
-app.listen(3000)
-console.log('Server running https://localhost:3000')
+app.listen()
+console.log('Server running https://ghostcodes.herokuapp.com/')
 
 module.exports = app;
