@@ -1,0 +1,15 @@
+{
+  "name": "ghostcodes",
+  "version": "1.0.0",
+  "description": "my simple website ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "GhostCodes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
