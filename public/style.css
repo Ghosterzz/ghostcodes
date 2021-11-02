@@ -52,6 +52,9 @@ font-weight: bolder;
 .topnav .icon {
   display: none;
 }
+.topnav .nav-discord {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a{
@@ -87,8 +90,11 @@ font-weight: bolder;
   display: block;
 }
  .topnav .nav-right{
-  float: left;
+ display: none;
 
+}
+.topnav .nav-right a{
+  float: left;
 }
 
 }
