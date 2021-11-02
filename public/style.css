@@ -54,7 +54,7 @@ font-weight: bolder;
 }
 .topnav .nav-discord {
   display: none;
-  display: none;
+  
 }
 
 @media screen and (max-width: 600px) {
