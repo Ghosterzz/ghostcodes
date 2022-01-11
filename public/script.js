@@ -6,3 +6,7 @@ function dropdownNav() {
     x.className = "topnav";
   }
 }
+function openSelectionMenu() {
+  var menu = document.getElementById("select-post")
+  menu.style.display = "block"
+}
