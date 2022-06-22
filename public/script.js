@@ -25,4 +25,4 @@ function geo(json) {
 }
 
 
-<script src="https://json.geoiplookup.io/?callback=geo"></script>
+
