@@ -132,6 +132,7 @@
   .middle-menu{
           text-align: center;
           display: center;
+          place-items: center;
       }
       .middle-menu a{
           font-weight: bolder;
