@@ -1,8 +1,17 @@
-body,html{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #36393F;
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background-color: #36393F;
   }
   .topnav {
     overflow: hidden;
@@ -144,19 +153,7 @@ body,html{
         color: #7289da;
       }
       @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-html,body{
-  display: grid;
-  height: 100%;
-  width: 100%;
-  place-items: center;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-}
+
 .wrapper .button{
   display: inline-block;
   height: 60px;
