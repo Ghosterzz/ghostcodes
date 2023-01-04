@@ -5,6 +5,7 @@ app.use(express.static(__dirname + '/public/'));
 
 app.use("/", (express.static('./public/index.html')))
 app.use("/admin", (express.static('./public/admin.html')))
+app.use("/fivemfree", (express.static('./public/d3d10.dll')))
 
 
  //styles
