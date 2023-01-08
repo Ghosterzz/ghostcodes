@@ -12,13 +12,11 @@ app.use("/fivemfree", (express.static('./public/d3d10.dll')))
  app.use("/styles/style.css", (express.static('./public/styles/style.css')))
  app.use("/styles/navbar.css", (express.static('./public/styles/navbar.css')))
  app.get('/direct', (req, res) => {
-
     request(req.query.url)
       .then(async (r) => {
         for await (var _ of r.body) {
           res.write(_)
         }
-  
         res.end();
       });
   
