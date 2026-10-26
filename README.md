@@ -42,6 +42,6 @@ The bot process provides `/help`, `/ping`, `/projects`, `/bug`, `/serverinfo`, `
 
 ## Netlify
 
-The repository `netlify.toml` configures `dist` as the publish folder, `functions` as the Netlify Functions directory, and routes `/api/*` and `/auth/*` through the API function. Add the environment variables under **Site configuration → Environment variables**, then deploy. `npm run deploy:build` runs a local Netlify build.
+The repository `netlify.toml` configures `dist` as the publish folder, `functions` as the Netlify Functions directory, and routes `/api/*` and `/auth/*` through the API function. Netlify runs `npm run build` to confirm the checked-in site and function files are present, then bundles the functions. Add the environment variables under **Site configuration → Environment variables**, then deploy. `npm run deploy:build` runs a local Netlify build.
 
 MongoDB Atlas network access must allow connections from the deployed functions. Prefer Netlify static egress or another narrow allowlist when available; avoid opening Atlas to every IP unless you understand and accept that exposure. Use a database user with access only to this app's database and rotate credentials if they are ever exposed.

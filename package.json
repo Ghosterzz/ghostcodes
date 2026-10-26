@@ -6,6 +6,7 @@
   "scripts": {
     "start": "netlify dev",
     "dev": "netlify dev",
+    "build": "node scripts/build.mjs",
     "bot": "node bot/index.mjs",
     "bot:commands": "node bot/deploy-commands.mjs",
     "deploy:build": "netlify build"
