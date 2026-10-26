@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#343a40">
+  <meta name="description" content="Projects built by GhostCodes.">
+  <title>GhostCodes Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="/styles/site.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="/scripts/site.js" defer></script>
+</head>
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#top">GhostCodes Projects</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects-title">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/admin">Manage projects</a></li>
+        </ul>
+        <form class="d-flex me-lg-3 mb-2 mb-lg-0" role="search" id="project-search-form">
+          <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search projects">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <a class="btn btn-primary btn-sm" id="account-action" href="/auth/discord?next=%2F">Login with Discord</a>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+    <section class="intro" id="top"><div class="eyebrow">My work</div><h1>Projects by GhostCodes</h1><p>A collection of things I have built and put online. Browse the projects below and open anything that catches your eye.</p></section>
+    <section aria-labelledby="projects-title">
+      <div class="projects-heading"><div><h2 id="projects-title">My projects</h2><p class="text-light opacity-75 mt-2 mb-0" id="member-note">Sign in with Discord to unlock member projects.</p></div><span class="count" id="project-count"></span></div>
+      <div class="card-list" id="projects" aria-live="polite"><p class="text-light">Loading projects…</p></div>
+    </section>
+    <section class="mb-5" id="report-bug">
+      <div class="projects-heading"><div><h2>Found a bug?</h2><p class="text-light opacity-75 mt-2 mb-0" id="bug-login-note">Sign in with Discord to send a bug report.</p></div></div>
+      <form id="bug-form" class="card p-4 text-dark hidden">
+        <div class="row g-3"><div class="col-md-5"><label class="form-label" for="bug-title">What went wrong?</label><input class="form-control" id="bug-title" maxlength="120" required></div><div class="col-12"><label class="form-label" for="bug-details">Tell me what happened</label><textarea class="form-control" id="bug-details" rows="4" maxlength="2000" required></textarea></div><div class="visually-hidden" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" tabindex="-1" autocomplete="off"></div></div>
+        <div class="d-flex align-items-center gap-3 mt-3"><button class="btn btn-primary" type="submit">Send report</button><span class="small" id="bug-message" role="status"></span></div>
+      </form>
+    </section>
+    <footer class="footer" id="about"><span>© <span id="year"></span> GhostCodes</span><span>Thanks for checking out my projects.</span></footer>
+  </main>
+</body>
+</html>

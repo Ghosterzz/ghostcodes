@@ -1,2 +1,7 @@
 node_modules
 ghostcodes-react
+.env
+.env.*
+!.env.example
+netlify/.netlify
+data/*.sqlite*

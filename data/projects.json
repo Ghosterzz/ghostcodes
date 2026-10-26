@@ -1,0 +1,15 @@
+[
+  {
+    "id": "image-host",
+    "title": "Image Host",
+    "description": "A simple image hosting service built by GhostCodes. Upload an image and share it with a link.",
+    "url": "https://image-host-upload.herokuapp.com/upload",
+    "image": "https://image-host-upload.herokuapp.com/images/63503540d2390ec0645a53b7",
+    "tags": [
+      "Web app",
+      "Images"
+    ],
+    "featured": true,
+    "createdAt": "2022-10-19T00:00:00.000Z"
+  }
+]
