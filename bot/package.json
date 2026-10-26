@@ -1,0 +1,14 @@
+{
+  "name": "ghostcodes-discord-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "commands": "node deploy-commands.mjs"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.0.1"
+  }
+}

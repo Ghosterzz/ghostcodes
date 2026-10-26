@@ -1,2 +1,7 @@
-node_modules
+node_modules/
 ghostcodes-react
+.env
+.env.*
+!.env.example
+!bot/.env.example
+netlify/.netlify
